@@ -1,49 +1,74 @@
-h1{
-  font: "Lobster";
-  align-self: center;
+{
+  box-sizing: border-box;
 }
 
-body{
-  display: flex;
-  position: relative;
+html{
+  height: 100%;
+  background: linear-gradient(#615dad, #ffc8da);
   color: white;
+  text-align: center;
+  font-family: 'OpenSans', sans-serif;
 }
+
+h1{
+  font-family: "Lobster";
+  font-size: 40px;
+}
+
 
 img{
-  border-radius: 5px;
-}
-
-div {
-  background: rgb(97,93,173);
-  background: linear-gradient(180deg, rgba(97,93,173,1) 0%, rgba(255,200,218,1) 100%);
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
 
 .container{
+display: flex;
+justify-content: center;
+}
+
+.window{
   display: flex;
   position: absolute;
-  justify-content: baseline;
   flex-direction: column;
   background-color: #283e50;
-  max-width: 300px;
-
+  max-width: 400px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-top: 50px;
+  font-size: 17px;
 }
 
 .copy{
-  display:flex;
-  padding: 20px;
-  justify-content: center;
-  align-self: baseline;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
 }
 
 .button{
 height: 60px;
-width: 300px;
+width: 400px;
+color: white;
+font-size: 18px;
+border: none;
 }
 
-.secondary{
+a{
+color: white;
+text-decoration: none;
+}
+
+.rules {
   background-color: #1fcca4;
 }
+  
+.rules:hover {
+  background-color:#1cbb96;
+}
 
-.primary {
-  background: #0197f6;
+.play {
+  background-color: #0197f6;
+}
+
+.play:hover {
+  background-color: #0090e9;
 }
