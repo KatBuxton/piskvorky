@@ -1,5 +1,5 @@
 h1{
-  font: "Lobster Regular";
+  font: "Lobster";
   align-self: center;
 }
 
@@ -7,10 +7,8 @@ body{
   display: flex;
   position: relative;
   color: white;
-    
-}
-.background{
-background: linear-gradient(#615dad, #ffc8da);
+  background: rgb(97,93,173);
+  background: linear-gradient(180deg, rgba(97,93,173,1) 0%, rgba(255,200,218,1) 100%);
 }
 
 .container{
@@ -26,6 +24,7 @@ background: linear-gradient(#615dad, #ffc8da);
   display:flex;
   padding: 20px;
   justify-content: center;
+  align-self: baseline;
 }
 
 .secondary{
