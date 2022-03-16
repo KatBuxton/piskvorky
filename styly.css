@@ -10,8 +10,7 @@ body{
     
 }
 .background{
-background-size: cover;
-background-image: linear-gradient(#615dad, #ffc8da);
+background: linear-gradient(#615dad, #ffc8da);
 }
 
 .container{
@@ -27,4 +26,12 @@ background-image: linear-gradient(#615dad, #ffc8da);
   display:flex;
   padding: 20px;
   justify-content: center;
+}
+
+.secondary{
+  background-color: #1fcca4;
+}
+
+.primary {
+  background: #0197f6;
 }
