@@ -7,9 +7,9 @@ body{
   display: flex;
   position: relative;
   color: white;
-
 }
-.background{
+
+div {
   background: rgb(97,93,173);
   background: linear-gradient(180deg, rgba(97,93,173,1) 0%, rgba(255,200,218,1) 100%);
 }
@@ -17,7 +17,7 @@ body{
 .container{
   display: flex;
   position: absolute;
-  justify-content: center;
+  justify-content: baseline;
   flex-direction: column;
   background-color: #283e50;
   max-width: 300px;
@@ -32,7 +32,8 @@ body{
 }
 
 .button{
-height: 30px;
+height: 60px;
+width: 300px;
 }
 
 .secondary{
