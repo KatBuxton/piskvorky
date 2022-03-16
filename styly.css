@@ -31,6 +31,10 @@ body{
   align-self: baseline;
 }
 
+.button{
+height: 30px;
+}
+
 .secondary{
   background-color: #1fcca4;
 }
