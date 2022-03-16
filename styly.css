@@ -6,7 +6,6 @@ h1{
 body{
   display: flex;
   position: relative;
-  justify-content: center;
   color: white;
     
 }
@@ -22,4 +21,10 @@ background-image: linear-gradient(#615dad, #ffc8da);
   flex-direction: column;
   background-color: #283e50;
   max-width: 300px;
+}
+
+.copy{
+  display:flex;
+  padding: 20px;
+  justify-content: center;
 }
