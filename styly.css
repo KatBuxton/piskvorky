@@ -7,6 +7,9 @@ body{
   display: flex;
   position: relative;
   color: white;
+
+}
+.background{
   background: rgb(97,93,173);
   background: linear-gradient(180deg, rgba(97,93,173,1) 0%, rgba(255,200,218,1) 100%);
 }
@@ -18,6 +21,7 @@ body{
   flex-direction: column;
   background-color: #283e50;
   max-width: 300px;
+  border-radius: 5px;
 }
 
 .copy{
