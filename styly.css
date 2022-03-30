@@ -1,4 +1,4 @@
-{
+* {
   box-sizing: border-box;
 }
 
@@ -57,11 +57,11 @@ color: white;
 text-decoration: none;
 }
 
-.rules {
+.rules, .homepage {
   background-color: #1fcca4;
 }
   
-.rules:hover {
+.rules:hover, .homepage:hover {
   background-color:#1cbb96;
 }
 
