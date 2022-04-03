@@ -111,6 +111,8 @@ li:not(:last-child) {
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 figure{
@@ -141,7 +143,7 @@ figcaption {
   }
 
   figure {
-    width: calc(50% - 40px);
+    width: calc(50% - 25px);
     margin: auto;
     margin-top: 20px;
   }
