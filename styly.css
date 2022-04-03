@@ -114,10 +114,7 @@ li:not(:last-child) {
 }
 
 figure{
-  display: flex;
-  flex-wrap: wrap;
   max-width: 80%;
-  align-self: center;
 }
 
 figure img{
@@ -128,4 +125,19 @@ figure img{
 figcaption {
   font-style: italic;
   padding-top: 5px;
+  text-align: center;
+}
+
+@media (min-width: 800px) {
+  .window.pravidla {
+    max-width: 660px;
+  }
+  .instructions {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  figure {
+    width: 40%;
+  }
 }
