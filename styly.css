@@ -28,12 +28,38 @@ img{
   border-top-left-radius: 5px;
 }
 
-.container{
-display: flex;
-justify-content: center;
+.container {
+  display: flex;
+  justify-content: center;
 }
 
-.window{
+.container.hra {
+  flex-direction: column;
+  max-width: 80vmin;
+  margin: auto;
+}
+
+.controls {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status {
+  font-weight: bold;
+  flex-direction: row;
+} 
+
+.button.home,
+.button.restart {
+  width: 2em;
+  height: 2em;
+  margin: 5px;
+  border-radius: 3px;
+  font-size:larger;
+}
+
+
+.window {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -44,6 +70,13 @@ justify-content: center;
   margin-top: 50px;
   margin-bottom: 50px;
   font-size: 17px;
+}
+
+.controls {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  margin-top: auto;
 }
 
 .copy{
@@ -65,20 +98,29 @@ color: white;
 text-decoration: none;
 }
 
-.rules, .homepage {
+.rules, 
+.homepage {
   background-color: #1fcca4;
   border-bottom: 1px solid #283e50;
 }
+
+.home {
+  background-color: #1fcca4;
+}
   
-.rules:hover, .homepage:hover {
+.rules:hover, 
+.homepage:hover,
+.home {
   background-color:#1cbb96;
 }
 
-.play {
+.play,
+.restart {
   background-color: #0197f6;
 }
 
-.play:hover {
+.play:hover
+.restart:hover {
   background-color: #0090e9;
 }
 
@@ -128,6 +170,42 @@ figcaption {
   padding-top: 2px;
   text-align: center;
   font-size: 13px;
+}
+
+.grid-container {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". . . . . . . . . ."
+    ". . . . . . . . . ."
+    ". . . . . . . . . ."
+    ". . . . . . . . . ."
+    ". . . . . . . . . ."
+    ". . . . . . . . . ."
+    ". . . . . . . . . ."
+    ". . . . . . . . . ."
+    ". . . . . . . . . ."
+    ". . . . . . . . . ."; 
+  width: 300px;
+  align-self: center;
+  margin-top: 30px;
+}
+
+.grid-item {
+  display: grid;
+  height: 30px;
+  width: 30px;
+  border-radius: 0px;
+  padding: 0px;
+  outline: 1px solid black;
+}
+
+.grid-item button {
+  background-color: transparent;
+  border: 1px solid black;
+
 }
 
 @media (min-width: 800px) {
