@@ -203,9 +203,13 @@ figcaption {
 }
 
 .grid-item button {
-  background-color: transparent;
   border: 1px solid black;
+  opacity: 0.2;
+  cursor: pointer;
+}
 
+.grid-item button:hover {
+  opacity: 0.5;
 }
 
 @media (min-width: 800px) {
