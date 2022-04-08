@@ -188,15 +188,14 @@ figcaption {
     ". . . . . . . . . ."
     ". . . . . . . . . ."
     ". . . . . . . . . ."; 
-  width: 300px;
   align-self: center;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .grid-item {
   display: grid;
-  height: 30px;
-  width: 30px;
+  height: calc(80vmin / 10);
+  width: calc(80vmin / 10);
   border-radius: 0px;
   padding: 0px;
   outline: 1px solid black;
@@ -209,6 +208,10 @@ figcaption {
 }
 
 .grid-item button:hover {
+  opacity: 0.5;
+}
+
+.grid-item button:focus {
   opacity: 0.5;
 }
 
