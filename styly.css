@@ -40,22 +40,24 @@ img{
 }
 
 .controls {
+  display: flex;
+  position: relative;
+  margin-top: auto;
   justify-content: space-between;
   align-items: center;
 }
 
 .status {
   font-weight: bold;
-  flex-direction: row;
+  font-size: larger;
 } 
 
 .button.home,
 .button.restart {
-  width: 2em;
-  height: 2em;
+  width: 2.5em;
+  height: 2.5em;
   margin: 5px;
   border-radius: 3px;
-  font-size:larger;
 }
 
 
@@ -72,12 +74,6 @@ img{
   font-size: 17px;
 }
 
-.controls {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  margin-top: auto;
-}
 
 .copy{
   padding-left: 20px;
@@ -110,7 +106,7 @@ text-decoration: none;
   
 .rules:hover, 
 .homepage:hover,
-.home {
+.home:hover {
   background-color:#1cbb96;
 }
 
@@ -119,7 +115,7 @@ text-decoration: none;
   background-color: #0197f6;
 }
 
-.play:hover
+.play:hover,
 .restart:hover {
   background-color: #0090e9;
 }
@@ -190,6 +186,7 @@ figcaption {
     ". . . . . . . . . ."; 
   align-self: center;
   margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .grid-item {
