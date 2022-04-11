@@ -120,6 +120,14 @@ text-decoration: none;
   background-color: #0090e9;
 }
 
+.status .icon,
+.button-icon {
+  position: relative;
+  top: 1.5px;
+}
+
+
+
 .list {
   text-align: left;
   padding-left: 20px;
