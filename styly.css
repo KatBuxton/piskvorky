@@ -207,17 +207,51 @@ figcaption {
 }
 
 .grid-item button {
-  border: 1px solid black;
   opacity: 0.2;
-  cursor: pointer;
 }
 
 .grid-item button:hover {
   opacity: 0.5;
+  cursor: pointer;
 }
 
 .grid-item button:focus {
   opacity: 0.5;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: -1.5px -1.5px 0 0 rgb(255, 255, 255);
+}
+
+.grid-item--cross {
+  background-image: url("cross.svg");
+  animation-name: zoom;
+  animation-duration: 0.15s;
+}
+
+.grid-item--circle {
+  background-image: url("circle.svg");
+  animation-name: zoom;
+  animation-duration: 0.15s;
+}
+
+.grid-container .grid-item .grid-item--circle, 
+.grid-container .grid-item .grid-item--cross {
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+  opacity: 1;
+}
+
+@keyframes zoom {
+  from {
+    background-size: 5%;
+  }
+  50% {
+    background-size: 50%;
+  }
+  to {
+    background-size: 70%;
+  }
 }
 
 @media (min-width: 800px) {
@@ -237,17 +271,4 @@ figcaption {
     margin: auto;
     margin-top: 20px;
   }
-}
-
-.grid-item--cross {
-  background-image: "cross.svg";
-}
-
-.grid-item--circle {
-  background-image: "circle.svg";
-}
-
-.grid-item--circle, 
-.grid-item--cross {
-  background-repeat: no-repeat;
 }

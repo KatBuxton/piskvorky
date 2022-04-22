@@ -1,12 +1,13 @@
 // kdo je na tahu, zacina hrat krouzek
 let turn = "circle";
 const status = document.querySelector(".status img");
-const btnElm = document.querySelectorAll("button");
+const btnElm = document.querySelectorAll(".grid-item button");
 
 const game = (event) => {
+// policko musi byt prazdne
+  event.target.disabled = true;
 
 // pokud jsou na tahu krouzky, pridej do policka tridu s krouzkem a zmen tah na krizky
-
   if (turn === "circle") {
     event.target.classList.add('grid-item--circle');
     turn = "cross";
