@@ -238,3 +238,16 @@ figcaption {
     margin-top: 20px;
   }
 }
+
+.grid-item--cross {
+  background-image: "cross.svg";
+}
+
+.grid-item--circle {
+  background-image: "circle.svg";
+}
+
+.grid-item--circle, 
+.grid-item--cross {
+  background-repeat: no-repeat;
+}
