@@ -65,7 +65,9 @@ const isWinningMove = (button) => {
     }
   
   const popup = () => {
-    alert(`Vyhral ${winner}`)
+    if (confirm(`Vyhral ${winner}`) === true) {
+      location.reload()
+    }
   }  
 
 	const origin = getPosition(button)
@@ -92,7 +94,7 @@ const isWinningMove = (button) => {
 	}
 
 	if (inRow >= symbolsToWin) {
-		return true
+		return true && setTimeout(popup, 500);
 	}
 
 	let inColumn = 1
